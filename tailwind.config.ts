@@ -38,15 +38,10 @@ const config = {
           12: "#2E2A41",
           13: "#6C7275",
         },
-        fontFamily: {
-          sans: ["var(--font-sora)", ...fontFamily.sans],
-          serif: ["Times New Roman", "serif"], // Added Times New Roman here
-          code: "var(--font-code)",
-          grotesk: "var(--font-grotesk)",
-        },
       },
       fontFamily: {
         sans: ["var(--font-sora)", ...fontFamily.sans],
+        serif: ["Times New Roman", "serif"],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
       },
@@ -109,7 +104,7 @@ const config = {
 };
 
 // Function to add CSS variables for all colors
-function addVariablesForColors({ addBase, theme }: any) {
+function addVariablesForColors({ addBase, theme }: { addBase: Function; theme: Function }) {
   const allColors = flattenColorPalette(theme("colors"));
   const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])

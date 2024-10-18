@@ -1,0 +1,113 @@
+/* Globe.css */
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0; 
+    background: #000; 
+  }
+  
+  .nextra-body {
+    width: 100%;
+  }
+  
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../../public/assets/img/galaxy.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative; 
+  }
+  
+  canvas {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw; 
+    max-height: 90vh; 
+    margin: 0 auto;
+    padding: 0 auto;
+    align-items: center;
+  }
+  @media (max-width: 320px) {
+    canvas {
+      
+      width: 90%; 
+      height: 100%;    
+      max-width: 100vw; 
+      max-height: 90vh; 
+    }
+    .App{
+      height:60vh;
+      width: 100%; 
+    }
+  }
+  
+ 
+  @media (max-width: 418px) {
+    canvas {
+      /* margin-left: 2px; */
+      width: 90%; 
+      height: 100%;    
+      max-width: 100vw; 
+      max-height: 90vh; 
+    }
+    .App{
+      height:60vh;
+      width: 100%; 
+    }
+  }
+  
+  @media (max-width: 614px) {
+    canvas {
+      width: 100%; 
+      height: 100%;    
+      max-width: 90vw; 
+      max-height: 90vh; 
+    }
+    .App{
+      height:60vh;
+      width: 100%; 
+    }
+  }
+  
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    canvas {
+      max-height: 70vh; 
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    canvas {
+      max-width: 590px; 
+      max-height: 590px; 
+    }
+  
+  }
+  .heading {
+    position: absolute; 
+    font-weight: 900;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;  
+    color: #ffffff; 
+    text-align: center; 
+    text-shadow: 0 1px 1px #bbb,
+    0 2px 0 #999, 
+    0 3px 0 #888, 
+    0 4px 0 #777, 
+    0 5px 0 #666, 
+    0 6px 0 #555, 
+    0 7px 0 #444, 
+    0 8px 0 #333, 
+    0 9px 7px #302314;
+    z-index: 1; 
+  }
+  
+  
+  
+  
